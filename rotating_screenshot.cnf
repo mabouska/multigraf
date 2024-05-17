@@ -1,6 +1,6 @@
 
 export user="myuser"
-export dashboard_list=("https://192.168.0.1:9000/d/ZalJ8xQTz/dashboard?orgId=1&refresh=10s&kiosk" "https://192.168.0.1:9000/d/ZalJ8xQTz/dashboard?orgId=1&refresh=10s&kiosk" "https://192.168.0.2:9000/grafana/d/bb90a410-f137-49af-8840-asRsd8ece826/dashboard?orgId=1&kiosk" https://192.168.0.1:9000/d/123456/dashboard2?orgId=1&refresh=10s&kiosk)
+export dashboard_list=("https://192.168.0.1:9000/d/ZalJ8xQTz/dashboard?orgId=1&refresh=10s&kiosk" "https://192.168.0.1:9000/d/ZalJ8xQTz/dashboard?orgId=1&refresh=10s&kiosk" "https://192.168.0.2:9000/grafana/d/bb90a410-f137-49af-8840-asRsd8ece826/dashboard?orgId=1&kiosk" "https://192.168.0.1:9000/d/123456/dashboard2?orgId=1&refresh=10s&kiosk")
 export screenshot_path="/var/grafana/png"
 export script_path="/home/grafana/scripts"
 export event_log_path="/run/user/1001/libpod/tmp/events"
