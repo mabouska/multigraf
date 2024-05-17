@@ -24,7 +24,7 @@ if [ $h -ge $starthr ] && [ $h -lt $stophr ] && [ $d -le $weekend ]; then #if it
   podman container restart dashboard_screenshot
   min_mod=$(($m%$list_length))
   podman exec --user ${user} -it dashboard_screenshot google-chrome --ignore-certificate-errors --headless --force-device-scale-factor=1.5 --window-size=1920,1080 --virtual-time-budget=10000 --screenshot="/tmp/myscreenshot.png" "${dashboard_list[$min_mod]}"
-  podman cp dashboard_screenshot:/tmp/myscreenshot.png /opt/SP/app01/grafana/png/myscreenshot.png
+  podman cp dashboard_screenshot:/tmp/myscreenshot.png ${screenshot_path}/myscreenshot.png
   chmod 666 ${screenshot_path}/myscreenshot.png
   cp ${script_path}/index.html  ${screenshot_path}/index.html
   echo "Debug info1: h = $h && d = $d - $(date)"
